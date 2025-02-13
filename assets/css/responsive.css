@@ -1,0 +1,133 @@
+/*=========Tablet Device=========*/
+
+@media only screen and (max-width: 1024px){
+    
+/*======For All========*/
+   .nav-link {
+    font-size: 10px;
+} 
+    .all-btn {
+    margin-bottom: 2rem;
+}
+    
+/*======Homepage========*/
+    .hero h1 {
+    text-align: center;
+}
+    .hero img{
+        margin-left: 10vw;
+        margin-right: auto;
+}
+    
+/*======princina page========*/
+    
+    .chorobu p{
+    text-align: justify;
+}
+
+    .princinabg {
+    background-image: url(../images/crohnova%20bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    background-position: -250px 0px;
+}
+    .princinaimg {
+    width: 85%;
+    height: 200px;
+    margin-top: 6vh;
+    border-radius: 75px 0px 18px 18px;
+}
+/*======diagnoza page========*/
+    .diagnozaimg {
+    margin-top: 9vh;
+    border-radius: 85px 0px 25px 25px;
+}
+    
+}
+
+/*=========Mobile Device big=========*/
+
+@media only screen and (max-width: 767px) {
+    div{
+        overflow: hidden;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .h5, h5 {
+    font-size: 13px;
+}
+/*======Homepage========*/
+    .sec {
+    min-height: 250px;
+    padding: 30px;
+    margin: 10px!important;
+}
+    .image{
+        padding: 3% !important;
+    }
+/*======princina page========*/
+    .princinabg {
+    background-image: url(../images/crohnova%20bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    background-position: -100px 0px;
+}
+    .princinaimg {
+    width: 85%;
+    height: 200px;
+    margin-top: 4vh;
+    border-radius: 60px 0px 10px 10px;
+}
+    
+/*======diagnoza page========*/
+    .diagnozaimg {
+    margin-top: 9vh;
+    border-radius: 100px 0px 25px 25px;
+}
+}
+
+/*=========Mobile Device small=========*/
+
+@media only screen and (max-width: 320px){
+    
+    h1{
+        font-size: 15px !important;
+    }
+    .h5, h5 {
+    font-size: 9px;
+}
+    p{
+        font-size: 12px !important;
+    }
+    
+    .all-btn{
+        font-size: 16px;
+    }
+    
+   
+    
+    
+    
+/*======princina page========*/
+    .princinabg {
+    background-image: url(../images/crohnova%20bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+    background-position: -130px 0px;
+}
+    .princinaimg {
+    width: 85%;
+    height: 160px;
+    margin-top: 4vh;
+    border-radius: 40px 0px 10px 10px;
+}
+/*======diagnoza page========*/
+    .diagnozaimg {
+    margin-top: 9vh;
+    border-radius: 75px 0px 15px 15px;
+}
+}

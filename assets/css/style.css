@@ -1,0 +1,299 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');*/
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+/*============ For All ===========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+h1{
+/*    color: #152137;*/
+    color: #9C49DA;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 700;
+/*    font-family: 'Jost', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    color: #152137;
+    margin-bottom: 16px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: #4A5F74;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 span, h2 span{
+    color: #00AAEA;
+    font-size: 35;
+    font-weight: 800;
+}
+.tb-p {
+    padding: 10px 0;
+}
+
+.all-btn {
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+/*    background: #1ADD97;*/
+    background: #9C49DA;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.all-btn:hover {
+    background: #272a3a;
+    color: #fff;
+}
+
+
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 400;
+/*    font-family: 'Jost', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover {
+/*    background-color: #1add97;*/
+    background: #9C49DA;
+    color: #fff !important;
+}
+.dropdown-item {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-item:hover {
+/*    background-color: #1add97;*/
+    background: #9C49DA;
+    color: #fff;
+}
+
+.navbar-nav>.active>a {
+            color: #293f73 !important;
+            font-weight: 700 !important;
+        }
+
+.bottom-border {
+    display: inline-block;
+    width: 15px;
+    height: 5px;
+    background: #293f73;
+    border-radius: 10px;
+    position: relative;
+    margin: 5px 0;
+    
+}
+.bottom-border::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #1ADD97;
+    left: -40px;
+    top: 0;
+    border-radius: 10px;
+}
+.bottom-border::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #1ADD97;
+    top: 0;
+    right: -40px;
+    border-radius: 10px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+/*============ Top Start ===========*/
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #152137;
+    line-height: 1;
+}
+.navbar-brand span{
+    color: #1add97;
+}
+.navbar-brand span .o, .navbar-brand span .oo {
+    color: red;
+}
+/*============ Nav Start ===========*/
+
+.nb {
+/*    background: #1ADD97;*/
+/*    background: #45E9AF;*/
+    background: #9C49DA;
+    color: #fff;
+
+}
+.s-icon{
+    font-size: 20px;
+    color: #fff;
+}
+.s-icon:hover{ 
+    color: #272a3a;
+}
+.c-icon, .t-contact span{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.t-contact span:hover{
+    color: #272a3a;
+}
+
+
+.nav-bg {
+    background: #fff;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+
+.nav-con {
+    min-height: 30px;
+}
+
+.nav-con img {
+    height: 50px;
+}
+
+/*============Nav End ===========*/
+
+
+/*=================*/
+.hero{
+    margin-top: 10vh;
+}
+.hero-bg{
+    background: #ECF9FF;
+    min-height: 450px;
+    padding: 50px;
+}
+.hero h1{
+    color: #152137;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero p{
+    color: #4A5F74;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cuse{
+    padding: 50px 0 80px 0 ;
+}
+.cuse p{
+    font-size: 20px;
+    text-align: justify;
+}
+.footer-con{
+    min-height: 50px;
+    border-top: 1px solid #C5D1E9;
+    padding: 10px;
+}
+
+.sec{
+    min-height: 250px;
+    padding: 30px;
+    margin: 5px;
+    
+}
+.sec1{
+    background: #ECF9FF;
+}
+.sec1 img{
+    margin-top: 20px;
+}
+.sec2{
+    background: #FFEDE3;
+}
+.sec3{
+    background: #F1EAFC;
+}
+
+/*=========================*/
+
+/*=============pricina Page Css ===============*/
+
+.cuses p, .drug p{
+    text-align: center;
+    padding: 0 8%;
+}
+.chorobu p{
+    text-align: center;
+}
+
+.princinabg{
+    background-image: url(../images/crohnova%20bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    background-position: 0px 0px;
+}
+.princinaimg{
+    width: 85%;
+    margin: auto;
+    height: 300px;
+    margin-top: 9vh;
+    border-radius: 114px 0px 20px 20px;
+}
+
+/*=============diagnoza Page Css ===============*/
+.diagnozaimg{
+    margin-top: 9vh;
+    border-radius: 130px 0px 50px 50px;
+}
+/*=============Error Page Css ===============*/
+.error{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.error-img{ 
+    margin-bottom: 3vh;
+    height: 70vh;
+}
+.error p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.error p span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #00DFC2; 
+    font-size: 18px;
+}
