@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Psychologie a Psychiatrie - Crohnova choroba</title>
+    <title>imunologie-alergologie</title>
 
-    <!-- Bootstrap 4 (CDN) -->
+    <!-- Bootstrap 4 CSS (CDN) -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="assets/css/psychologie-psychiatrie.css" />
+    <link rel="stylesheet" href="assets/css/imunologie-alergologie.css" />
     <!-- CSS file linked -->
     <script
       async
@@ -19,10 +19,10 @@
     ></script>
   </head>
   <body>
-    <!-- Topbar prázdný -->
+    <!-- Topbar -->
     <div class="topbar"></div>
 
-    <!-- Navbar -->
+    <!-- Navbar (stejná struktura) -->
     <section class="nav-bg sticky-top">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
@@ -49,7 +49,7 @@
           <!-- Menu -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <!-- Ostatní odkazy stejným způsobem jako u vašich stránek -->
+              <!-- (Zde vaše menu odkazy...) -->
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Hlavní stránka</a>
               </li>
@@ -123,16 +123,20 @@
                       <a class="dropdown-item" href="chirurgie-proktologie.html"
                         >Chirurgie a Proktologie</a
                       >
-                      <!-- Tady ZA Chirurgii a Proktologii => Psychologie a Psychiatrie -->
                       <a
                         class="dropdown-item"
                         href="psychologie-psychiatrie.html"
                         >Psychologie a Psychiatrie</a
                       >
-                      <a class="dropdown-item" href="rehabilitace.html"
+                      <a
+                        class="dropdown-item"
+                        href="rehabilitace-fyzioterapie.html"
                         >Rehabilitace a Fyzioterapie</a
                       >
-                      <a class="dropdown-item" href="imunologie.html"
+                      <!-- ODKAZ sem: imunologie-alergologie.html -->
+                      <a
+                        class="dropdown-item"
+                        href="imunologie-alergologie.html"
                         >Imunologie a Alergologie</a
                       >
                       <a class="dropdown-item" href="oftalmologie.html"
@@ -162,6 +166,7 @@
               </li>
             </ul>
           </div>
+          <!-- /#navbarNav -->
         </div>
         <!-- /.container -->
       </nav>
@@ -170,11 +175,11 @@
     <!-- Hero sekce -->
     <section class="hero-section">
       <div class="container text-center">
-        <h1>Psychologie a Psychiatrie</h1>
+        <h1>Imunologie a Alergologie</h1>
         <p class="lead">
-          Proč je duševní pohoda pro pacienty s Crohnovou chorobou zásadní a jak
-          mohou psychologové a psychiatři pomoci zvládat emoční i psychické
-          dopady této nemoci.
+          Jak poruchy imunitního systému a alergické reakce ovlivňují Crohnovu
+          chorobu a proč jsou tyto disciplíny klíčové pro lepší pochopení i
+          léčbu.
         </p>
       </div>
     </section>
@@ -182,19 +187,21 @@
     <!-- HLAVNÍ OBSAH -->
     <main>
       <div class="container">
-        <!-- 1) Text vlevo, obrázek vpravo -->
+        <!-- 1) Intro: text vlevo, jen 1 placeholder vpravo -->
         <div class="row section-divider">
           <div class="col-md-6">
             <p>
               Crohnova choroba je chronické zánětlivé onemocnění trávicího
-              traktu, které může mít hluboký dopad nejen na fyzické, ale i na
-              psychické zdraví pacientů. Přestože se onemocnění primárně
-              projevuje fyzickými symptomy, jako jsou bolesti břicha, průjmy a
-              únava, jeho vliv na psychiku může být stejně významný. Chronická
-              onemocnění totiž zasahují do všech aspektů života – od pracovních
-              a osobních vztahů až po celkový pocit životní spokojenosti. V
-              těchto situacích mohou psychologie a psychiatrie hrát klíčovou
-              roli v podpoře pacientů a zlepšení jejich kvality života.
+              traktu, které má úzkou vazbu na poruchy imunitního systému.
+              Imunologie a alergologie jsou klíčovými lékařskými disciplínami,
+              které umožňují hlubší pochopení mechanizmů této nemoci a jejího
+              vlivu na tělo. Imunologie se zaměřuje na fungování a regulaci
+              imunitního systému, který je u pacientů s Crohnovou chorobou často
+              narušený. Alergologie zase pomáhá odhalit citlivost na určité
+              potraviny, léky nebo složky prostředí, které mohou zhoršovat
+              příznaky nemoci. Obě tyto disciplíny hrají zásadní roli v
+              diagnostice, léčbě a prevenci komplikací spojených s Crohnovou
+              chorobou.
             </p>
           </div>
           <div
@@ -206,12 +213,12 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 1 (úvodní pravý)</span> -->
+              <!-- <span>Obrázek 1 (Intro pravý)</span> -->
             </div>
           </div>
         </div>
 
-        <!-- 2) Text vpravo, obrázek vlevo -->
+        <!-- 2) Imunologie: text vpravo, placeholder vlevo -->
         <div class="row section-divider">
           <div
             class="col-md-6 d-flex align-items-center justify-content-center order-md-1 order-2"
@@ -222,57 +229,56 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 2 (holistický vlevo)</span> -->
+              <!-- <span>Obrázek 2 (Imunologie vlevo)</span> -->
             </div>
           </div>
           <div class="col-md-6 order-md-2 order-1">
+            <h2>Imunologie: Hlubší pohled na imunitní systém</h2>
             <p>
-              Psychologie a psychiatrie poskytují holistický přístup k péči o
-              pacienty s Crohnovou chorobou. Psychologové pomáhají pacientům
-              zvládat stres, úzkost, deprese a další emoční problémy
-              prostřednictvím terapeutických technik a podpory. Psychiatrie se
-              zaměřuje na léčbu závažnějších psychických stavů, jako jsou
-              klinická deprese nebo úzkostné poruchy, a nabízí farmakologické
-              řešení, pokud je to nutné. Tímto způsobem oba obory spolupracují
-              na vytvoření komplexního plánu péče, který zohledňuje fyzické i
-              duševní potřeby pacienta.
+              Imunologie se zabývá zkoumáním a léčbou poruch imunitního systému.
+              U Crohnovy choroby hraje imunitní systém klíčovou roli, protože
+              jeho dysregulace vede k chronickému zánětu ve střevech. Namísto
+              toho, aby chránil tělo před škodlivými mikroorganismy, reaguje
+              přehnaně na normální střevní mikroflóru nebo složky potravy, což
+              vede k autoimunitním reakcím a poškození tkání.
             </p>
           </div>
         </div>
 
-        <!-- 3) Význam péče - text vlevo, 2 obrázky vpravo -->
+        <!-- 3) Jak imunologie pomáhá... => text vlevo, 2 placeholders vpravo -->
         <div class="row section-divider">
           <div class="col-md-6">
-            <h2>Význam psychologické a psychiatrické péče</h2>
-            <p>
-              Pacienti s Crohnovou chorobou se často potýkají s různými
-              psychickými výzvami, které mohou zahrnovat:
-            </p>
+            <h2>Jak imunologie pomáhá pacientům s Crohnovou chorobou?</h2>
             <ul>
               <li>
-                <strong>Stres a úzkost:</strong> Neustálý stres z řízení nemoci,
-                obav z budoucnosti a častých kontrol.
+                <strong>Poruchy imunitní regulace</strong><br />
+                U pacientů s Crohnovou chorobou je imunitní systém hyperaktivní,
+                což znamená přehnanou reakci na neškodné podněty (střevní
+                bakterie, potrava). Zvyšuje se hladina prozánětlivých cytokinů
+                (TNF-α, IL-6, IL-1β).
               </li>
               <li>
-                <strong>Deprese:</strong> Chronická povaha onemocnění,
-                dlouhodobá léčba a opakované relapsy vedoucí k pocitům
-                beznaděje.
+                <strong>Vyšetření imunitního systému</strong><br />
+                Testování buněčné imunity (T-lymfocyty, B-lymfocyty),
+                protilátek, zánětlivých markerů (CRP, kalprotektin).
               </li>
               <li>
-                <strong>Pocit izolace:</strong> Omezení denních aktivit a obavy
-                z nepochopení mohou vést k osamělosti.
+                <strong>Prevence infekcí</strong><br />
+                Imunosuprese či biologická léčba zvyšují riziko infekcí.
+                Imunologové doporučují preventivní očkování, sledují latentní
+                infekce.
               </li>
               <li>
-                <strong>Narušení životních plánů:</strong> Nemoc může ovlivnit
-                kariéru, rodinný život i koníčky, což vyvolává frustraci a
-                zklamání.
+                <strong>Biologická léčba</strong><br />
+                Inhibitory TNF-α, interleukinů (IL-12, IL-23) či modulátory
+                imunity (vedolizumab) cílí na klíčové složky zánětu.
+              </li>
+              <li>
+                <strong>Sledování vedlejších účinků</strong><br />
+                Kontrola rizika sekundárních autoimunit, lymfomů apod.
+                Pravidelné krevní testy.
               </li>
             </ul>
-            <p>
-              Psychologická a psychiatrická péče může těmto pacientům pomoci
-              zvládat emoční dopady nemoci, rozvinout strategie zvládání stresu,
-              zlepšit kvalitu života a podpořit pozitivní přístup k léčbě.
-            </p>
           </div>
           <div
             class="col-md-6 d-flex flex-column align-items-center justify-content-center"
@@ -283,7 +289,7 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 3a (Význam - horní)</span> -->
+              <!-- <span>Obrázek 3a (Jak imunologie pomáhá - horní)</span> -->
             </div>
             <div class="img-placeholder">
               <img
@@ -291,134 +297,47 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 3b (Význam - dolní)</span> -->
+              <!-- <span>Obrázek 3b (Jak imunologie pomáhá - dolní)</span> -->
             </div>
           </div>
         </div>
 
-        <!-- 4) Psychologie: Bez změn => text + 2 obrázky -->
-        <div class="row section-divider">
-          <div class="col-12">
-            <h2>Psychologie: Jak pomáhá pacientům s Crohnovou chorobou</h2>
-            <p>
-              Psychologie se zabývá pochopením lidského chování, emocí a
-              myšlenkových procesů. Pro pacienty s Crohnovou chorobou je práce s
-              psychologem důležitá, protože nemoc přináší nejen fyzické obtíže,
-              ale také psychické výzvy, jež mohou významně ovlivnit každodenní
-              život.
-            </p>
-            <h3>Hlavní přístupy v psychologické péči</h3>
-            <ul>
-              <li>
-                <strong>Kognitivně-behaviorální terapie (CBT)</strong>: Pomáhá
-                odhalit negativní myšlenkové vzorce a nahrazovat je
-                pozitivnějšími.
-              </li>
-              <li>
-                <strong>Mindfulness a relaxační techniky</strong>: Meditace,
-                hluboké dýchání nebo svalová relaxace zmírňují stres a úzkost.
-              </li>
-              <li>
-                <strong>Zvládání stresu</strong>: Identifikace stresorů v životě
-                a nácvik efektivních strategií pro jejich zvládnutí.
-              </li>
-              <li>
-                <strong>Skupinová terapie a podpora</strong>: Sdílení zkušeností
-                s ostatními pacienty, pocit sounáležitosti a menší izolace.
-              </li>
-              <li>
-                <strong>Podpora při změnách životního stylu</strong>:
-                Přizpůsobení se novým omezením, dietě či jiným úpravám režimu.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 5) Psychiatrie (rozšířený text vlevo), vpravo "Nejčastější problémy" -->
+        <!-- 4) Alergologie: text vlevo, 2 placeholders vpravo (stejné jako předtím) -->
         <div class="row section-divider">
           <div class="col-md-6">
-            <h2>Psychiatrie: Řešení závažnějších psychických problémů</h2>
+            <h2>Alergologie: Identifikace spouštěčů a řízení citlivostí</h2>
             <p>
-              Psychiatrie se zaměřuje na biologické aspekty psychických poruch a
-              je nezbytná v případech, kdy psychické potíže pacienta významně
-              ovlivňují jeho každodenní fungování nebo přinášejí výrazné omezení
-              schopnosti vést obvyklý život. Psychiatr je lékař, který může
-              spojit psychoterapeutické postupy s farmakologickou léčbou
-              (antidepresiva, anxiolytika, hypnotika apod.) a sledovat jejich
-              vliv na zdravotní stav pacienta v dlouhodobém horizontu.
+              Ačkoliv Crohnova choroba není alergické onemocnění, mnoho pacientů
+              má zvýšenou citlivost na určité potraviny, léky nebo složky
+              prostředí. Tyto faktory mohou zhoršovat příznaky, jako je
+              nadýmání, průjmy nebo bolesti břicha. Alergologie pomáhá odhalit a
+              zvládat tyto spouštěče, čímž přispívá ke zlepšení kvality života
+              pacientů.
             </p>
-            <p>
-              V kontextu Crohnovy choroby mohou silné bolesti, opakované relapsy
-              a nejistota kolem budoucího vývoje onemocnění výrazně prohlubovat
-              úzkosti či deprese. Úkolem psychiatra je vedle předepsání léků
-              také průběžné monitorování jejich účinnosti, prevence vedlejších
-              účinků a úprava terapie podle změn v psychickém stavu. Tímto
-              komplexním přístupem lze dosáhnout stabilizace psychického stavu,
-              snížit závažnost symptomů a podpořit celkovou kvalitu života
-              pacienta s Crohnovou chorobou.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h3>Nejčastější problémy k řešení</h3>
-            <ul>
+            <h3>Jak alergologie pomáhá pacientům s Crohnovou chorobou?</h3>
+            <ol>
               <li>
-                <strong>Deprese:</strong> Projevuje se přetrvávajícím smutkem,
-                únavou a ztrátou zájmu o dříve oblíbené činnosti.
+                <strong>Potravinové alergie a intolerance</strong><br />
+                Kožní prick testy, krevní testy (specifické IgE) pro
+                identifikaci potravinových alergií. Rozdíl mezi alergií a
+                intolerancí.
               </li>
               <li>
-                <strong>Úzkostné poruchy:</strong> Silná obava z relapsů,
-                komplikací či bolesti může vést k úzkosti.
+                <strong>Reakce na léky</strong><br />
+                Kortikosteroidy, imunosupresiva, biologika – alergolog testuje,
+                zda nejsou zdrojem vyrážek, dušnosti či horeček.
               </li>
               <li>
-                <strong>Poruchy spánku:</strong> Noční bolesti či průjmy
-                narušují spánek, což zhoršuje celkový stav.
+                <strong>Environmentální alergie</strong><br />
+                Pyl, prach, plísně, zvířecí srst – mohou dále zatěžovat imunitu.
+                Doporučení na úpravy prostředí, farmakoterapii.
               </li>
               <li>
-                <strong>Sebevražedné myšlenky:</strong> Při enormním zatížení
-                nemocí se může objevit těžká krize vyžadující akutní pomoc.
+                <strong>Desenzibilizace (imunoterapie)</strong><br />
+                Snížení citlivosti na potvrzený alergen (pyl, roztoči) pomocí
+                postupného vystavování.
               </li>
-            </ul>
-            <p>
-              Psychiatrická péče spočívá v nasazení vhodných léků a sledování
-              jejich účinků, aby byla zajištěna maximální efektivita a
-              bezpečnost pro pacienta.
-            </p>
-          </div>
-        </div>
-
-        <!-- 6) Význam pro léčbu Crohnovy choroby: text vlevo, 2 obrázky vpravo -->
-        <div class="row section-divider">
-          <div class="col-md-6">
-            <h2>Význam pro léčbu Crohnovy choroby</h2>
-            <p>
-              Psychická pohoda je neoddělitelně spojena s fyzickým zdravím. U
-              Crohnovy choroby může špatný psychický stav zhoršit příznaky a
-              ovlivnit účinnost léčby. Naopak stabilní duševní pohoda:
-            </p>
-            <ul>
-              <li>
-                <strong>Snižuje frekvenci relapsů</strong> díky menšímu
-                stresovému zatížení organismu.
-              </li>
-              <li>
-                <strong>Zlepšuje spolupráci</strong> s lékaři, protože pacient
-                má větší motivaci dodržovat léčbu.
-              </li>
-              <li>
-                <strong>Podporuje aktivní přístup</strong> k léčbě a hledání
-                dalších možností (např. úprava diety, cvičení).
-              </li>
-              <li>
-                <strong>Zvyšuje kvalitu života</strong> i přes chronický průběh
-                onemocnění.
-              </li>
-            </ul>
-            <p>
-              Proto by pacienti s Crohnovou chorobou neměli váhat vyhledat
-              odbornou pomoc, pokud cítí, že psychické obtíže ovlivňují jejich
-              každodenní život. Včasná podpora může zásadně zlepšit průběh
-              nemoci i osobní spokojenost.
-            </p>
+            </ol>
           </div>
           <div
             class="col-md-6 d-flex flex-column align-items-center justify-content-center"
@@ -429,7 +348,7 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 7a (Význam - horní)</span> -->
+              <!-- <span>Obrázek 4a (Alergologie pravý - horní)</span> -->
             </div>
             <div class="img-placeholder">
               <img
@@ -437,7 +356,130 @@
                 alt="Intro Image"
                 class="img-fluid"
               />
-              <!-- <span>Obrázek 7b (Význam - dolní)</span> -->
+              <!-- <span>Obrázek 4b (Alergologie pravý - dolní)</span> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 5) Co očekávat: text vpravo, placeholders vlevo -->
+        <div class="row section-divider">
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center order-md-1 order-2"
+          >
+            <!-- <div class="img-placeholder">
+            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
+            
+          </div> -->
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek 5b (Co očekávat vlevo - dolní)</span> -->
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2 order-1">
+            <h2>Co očekávat při návštěvě imunologa nebo alergologa?</h2>
+            <ol>
+              <li>
+                <strong>Podrobná anamnéza</strong><br />
+                Lékař se ptá na historii onemocnění, rodinnou anamnézu,
+                příznaky, reakce na léky a možné spouštěče.
+              </li>
+              <li>
+                <strong>Diagnostické testy</strong><br />
+                Krevní testy (hladiny cytokinů, IgE, CRP…), kožní testy, funkční
+                testy imunity.
+              </li>
+              <li>
+                <strong>Návrh léčby</strong><br />
+                Úpravy stávající terapie, doporučení dietních opatření,
+                odstranění alergenů, preventivní očkování.
+              </li>
+              <li>
+                <strong>Pravidelné sledování</strong><br />
+                Zejména u pacientů na imunosupresivech/biologické léčbě kvůli
+                riziku infekcí nebo jiných komplikací.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 6) Jak pomáhají: text vlevo, 2 placeholders vpravo -->
+        <div class="row section-divider">
+          <div class="col-md-6">
+            <h2>Jak pomáhají při zvládání Crohnovy choroby?</h2>
+            <ul>
+              <li>
+                <strong>Pochopení příčiny</strong>: Imunologie odhaluje
+                mechanismy přehnané imunitní odpovědi, alergologie identifikuje
+                možné spouštěče.
+              </li>
+              <li>
+                <strong>Zmírnění příznaků</strong>: Eliminace alergenů, úprava
+                stravy a cílená biologická léčba snižují aktivitu onemocnění.
+              </li>
+              <li>
+                <strong>Lepší tolerance léčby</strong>: Alergolog pomáhá vyhnout
+                se nežádoucím reakcím na léky a nabízí alternativy.
+              </li>
+              <li>
+                <strong>Prevence komplikací</strong>: Imunologové dohlížejí na
+                rizika infekcí, rakoviny nebo sekundárních autoimunit.
+              </li>
+            </ul>
+            <p>
+              Kombinace imunologických a alergologických poznatků vede k
+              vytvoření komplexního plánu péče, který pomáhá pacientům dosáhnout
+              dlouhodobé stability a zlepšení kvality života.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <!-- <div class="img-placeholder">
+            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
+          
+          </div> -->
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek 6b (Jak pomáhají - dolní)</span> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 7) Závěr: text vlevo, 1 placeholder vpravo -->
+        <div class="row section-divider">
+          <div class="col-md-6">
+            <h2>Závěr</h2>
+            <p>
+              Imunologie a alergologie poskytují klíčové nástroje pro zvládání
+              Crohnovy choroby. Zatímco imunologie se zaměřuje na regulaci
+              přehnané imunitní odpovědi a prevenci komplikací, alergologie
+              pomáhá identifikovat a řídit spouštěče, které mohou zhoršovat
+              příznaky. Spolupráce mezi těmito obory umožňuje vytvořit komplexní
+              plán péče, který zlepšuje kvalitu života pacientů, minimalizuje
+              komplikace a optimalizuje léčbu. Pokud trpíte Crohnovou chorobou a
+              čelíte potížím spojeným s imunitním systémem nebo alergiemi, je
+              konzultace s imunologem a alergologem nezbytným krokem k lepší
+              kontrole nemoci a zlepšení celkového zdravotního stavu.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek 7 (Závěr vpravo)</span> -->
             </div>
           </div>
         </div>
@@ -450,7 +492,7 @@
       © 2024 Crohnova choroba. Všechna práva vyhrazena.
     </div>
 
-    <!-- Skripty (jQuery, Bootstrap) -->
+    <!-- Skripty (jQuery, bootstrap.bundle) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       crossorigin="anonymous"

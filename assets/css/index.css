@@ -10,6 +10,81 @@
   color: white;
   font-size: 14px;
 }
+/* Pop-up Card Styles */
+
+.popup-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; /* Increased width for a bigger card */
+  height: 300px;
+  padding: 30px;
+  background-color: gainsboro;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 24px rgba(0, 0, 0, 0.1); /* Multi-layer shadow for depth */
+  display: block; /* Initially show the card */
+  z-index: 1000; /* Make sure it appears above other content */
+  opacity: 0; /* Initially hidden, will fade in */
+  animation: fadeIn 0.5s ease-out forwards; /* Smooth fade-in effect */
+}
+/* Pop-up Card Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Content inside the card */
+.popup-content {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  
+}
+
+.popup-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.popup-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+/* Button Styles */
+.popup-card button {
+  padding: 12px 25px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+/* Button Hover Effects */
+.popup-card button:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Button Active Effect */
+.popup-card button:active {
+  background-color: #3e8e41; /* Darker green on click */
+  transform: scale(1); /* Normal size on click */
+}
+
 /* Topbar je prázdný dle požadavku */
 
 /***********************************************

@@ -1,390 +1,520 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Bezezbytková dieta - Crohnova choroba</title>
-  
-  <!-- Bootstrap 4 CSS (CDN) -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-  />
-  <link rel="stylesheet" href="assets/css/bezezbytkova.css"><!-- CSS file linked -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Bezezbytková dieta - Crohnova choroba</title>
 
-</head>
-<body>
+    <!-- Bootstrap 4 CSS (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bezezbytkova.css" />
+    <!-- CSS file linked -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8338364196760060"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Prázdný topbar -->
+    <div class="topbar"></div>
 
-  <!-- Prázdný topbar -->
-  <div class="topbar"></div>
+    <!-- Navbar -->
+    <section class="nav-bg sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/Crohns%20logo%20trans%202.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
+          <!-- Tlačítko pro mobilní menu (hamburger) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <!-- Navbar -->
-  <section class="nav-bg sticky-top">
-    <nav class="navbar navbar-expand-md navbar-light">
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- Hlavní stránka -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Hlavní stránka</a>
+              </li>
+              <!-- Příčina -->
+              <li class="nav-item">
+                <a class="nav-link" href="pricina.html">Příčina</a>
+              </li>
+              <!-- Příznaky -->
+              <li class="nav-item">
+                <a class="nav-link" href="priznaky.html">Příznaky</a>
+              </li>
+              <!-- Diagnóza -->
+              <li class="nav-item">
+                <a class="nav-link" href="diagnoza.html">Diagnóza</a>
+              </li>
+              <!-- Klasická léčba -->
+              <li class="nav-item">
+                <a class="nav-link" href="klasicka-lecba.html"
+                  >Klasická léčba</a
+                >
+              </li>
+
+              <!-- Rady a tipy (dropdown) -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownRady"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Rady a tipy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownRady">
+                  <!-- Základy -->
+                  <a class="dropdown-item" href="zaklady.html">Základy</a>
+
+                  <!-- Diety (submenu) -->
+                  <div class="dropdown-submenu">
+                    <!-- HLAVNÍ ODKAZ => diety.html -->
+                    <a class="dropdown-item" href="diety.html"> Diety </a>
+                    <!-- Vnořené submenu -->
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="bezezbytkova.html"
+                        >Bezezbytková</a
+                      >
+                      <a class="dropdown-item" href="eliminacni.html"
+                        >Eliminační</a
+                      >
+                      <a class="dropdown-item" href="scd.html">SCD</a>
+                      <a class="dropdown-item" href="ibd-aid.html">IBD-AID</a>
+                      <a class="dropdown-item" href="low-fodmap.html"
+                        >Low-FODMAP</a
+                      >
+                      <a class="dropdown-item" href="paleo.html">Paleo</a>
+                    </div>
+                  </div>
+                  <!-- /.dropdown-submenu -->
+
+                  <a class="dropdown-item" href="vitaminy-mineraly.html"
+                    >Vitamíny a Minerály</a
+                  >
+                  <a class="dropdown-item" href="probiotika.html"
+                    >Probiotika a Prebiotika</a
+                  >
+                  <a class="dropdown-item" href="stres.html">Stres</a>
+
+                  <!-- Lékařská podpora (submenu) -->
+                  <div class="dropdown-submenu">
+                    <!-- HLAVNÍ ODKAZ => lekarska-podpora.html -->
+                    <a class="dropdown-item" href="lekarska-podpora.html">
+                      Lékařská podpora
+                    </a>
+                    <!-- submenu s dalšími odkazy -->
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="gastroenterologie.html"
+                        >Gastroenterologie</a
+                      >
+                      <a class="dropdown-item" href="nutricni-poradna.html"
+                        >Nutriční poradna</a
+                      >
+                      <a class="dropdown-item" href="chirurgie-proktologie.html"
+                        >Chirurgie a Proktologie</a
+                      >
+                      <a class="dropdown-item" href="rehabilitace.html"
+                        >Rehabilitace a Fyzioterapie</a
+                      >
+                      <a class="dropdown-item" href="imunologie.html"
+                        >Imunologie a Alergologie</a
+                      >
+                      <a class="dropdown-item" href="oftalmologie.html"
+                        >Oftalmologie</a
+                      >
+                      <a class="dropdown-item" href="dermatologie.html"
+                        >Dermatologie</a
+                      >
+                      <a class="dropdown-item" href="revmatologie.html"
+                        >Revmatologie</a
+                      >
+                    </div>
+                  </div>
+                  <!-- /.dropdown-submenu -->
+
+                  <a class="dropdown-item" href="lazne.html">Lázně</a>
+                  <a class="dropdown-item" href="invalidni-duchod.html"
+                    >Invalidní důchod</a
+                  >
+                  <a class="dropdown-item" href="aplikace-zachod.html"
+                    >Aplikace na záchod</a
+                  >
+                  <a class="dropdown-item" href="wc-karta.html">WC karta</a>
+                  <a class="dropdown-item" href="euroklic.html">Euroklíč</a>
+                </div>
+              </li>
+
+              <!-- Kontakt -->
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /#navbarNav -->
+        </div>
+        <!-- /.container -->
+      </nav>
+    </section>
+
+    <!-- Hero sekce -->
+    <section class="hero-section">
+      <div class="container text-center">
+        <h1>Bezezbytková dieta</h1>
+        <p class="lead">
+          Minimální nestravitelné zbytky, menší zátěž pro střeva a klidnější
+          průběh Crohnovy choroby.
+        </p>
+      </div>
+    </section>
+
+    <!-- HLAVNÍ OBSAH -->
+    <main>
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/Crohns%20logo%20trans%202.png" alt="logo" class="img-fluid"/>
-        </a>
-        <!-- Tlačítko pro mobilní menu (hamburger) -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <!-- Hlavní stránka -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Hlavní stránka</a>
-            </li>
-            <!-- Příčina -->
-            <li class="nav-item">
-              <a class="nav-link" href="pricina.html">Příčina</a>
-            </li>
-            <!-- Příznaky -->
-            <li class="nav-item">
-              <a class="nav-link" href="priznaky.html">Příznaky</a>
-            </li>
-            <!-- Diagnóza -->
-            <li class="nav-item">
-              <a class="nav-link" href="diagnoza.html">Diagnóza</a>
-            </li>
-            <!-- Klasická léčba -->
-            <li class="nav-item">
-              <a class="nav-link" href="klasicka-lecba.html">Klasická léčba</a>
-            </li>
+        <!-- 1) Úvodní odstavec: plná šířka -->
+        <div class="row">
+          <div class="col-12">
+            <p>
+              Bezezbytková dieta je speciální stravovací režim zaměřený na
+              minimalizaci nestravitelných zbytků v trávicím traktu. Tento
+              přístup pomáhá snížit mechanické dráždění střevní sliznice, omezit
+              objem stolice a zmírnit zánětlivé procesy. Je vhodná nejen pro
+              pacienty s Crohnovou chorobou, ale i pro pacienty s ulcerózní
+              kolitidou, po operacích střev, při častých průjmech nebo před
+              kolonoskopickým vyšetřením.
+            </p>
+          </div>
+        </div>
 
-            <!-- Rady a tipy (dropdown) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownRady" role="button" 
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Rady a tipy
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownRady">
-                <!-- Základy -->
-                <a class="dropdown-item" href="zaklady.html">Základy</a>
+        <!-- 2) Zásady bezezbytkové diety -->
+        <div class="row section-divider">
+          <div class="col-md-6 order-md-1 order-1">
+            <h2>Zásady bezezbytkové diety</h2>
+            <p>
+              Bezezbytková dieta klade důraz na konzumaci snadno stravitelných
+              potravin, které minimalizují zátěž na trávicí trakt. Klíčovými
+              principy jsou:
+            </p>
+            <ul>
+              <li>
+                <strong>Minimalizace vlákniny:</strong> Omezit celozrnné
+                obiloviny, syrovou zeleninu.
+              </li>
+              <li>
+                <strong>Šetrná úprava:</strong> Vaření, dušení, pečení bez tuku,
+                pára. Smažení se nedoporučuje.
+              </li>
+              <li>
+                <strong>Pravidelnost:</strong> Jíst menší porce 5–6krát denně.
+              </li>
+              <li>
+                <strong>Hydratace:</strong> Dostatek vody, bylinkových čajů,
+                vývarů. Vyhnout se alkoholu, syceným nápojům.
+              </li>
+              <li>
+                <strong>Minimalizace tuku:</strong> Pouze malé množství másla,
+                ghí či olejů.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-6 order-md-2 order-2 d-flex align-items-center justify-content-center"
+          >
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek - Zásady</span> -->
+            </div>
+          </div>
+        </div>
 
-                <!-- Diety (submenu) -->
-                <div class="dropdown-submenu">
-                  <!-- HLAVNÍ ODKAZ => diety.html -->
-                  <a class="dropdown-item" href="diety.html">
-                    Diety
-                  </a>
-                  <!-- Vnořené submenu -->
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="bezezbytkova.html">Bezezbytková</a>
-                    <a class="dropdown-item" href="eliminacni.html">Eliminační</a>
-                    <a class="dropdown-item" href="scd.html">SCD</a>
-                    <a class="dropdown-item" href="ibd-aid.html">IBD-AID</a>
-                    <a class="dropdown-item" href="low-fodmap.html">Low-FODMAP</a>
-                    <a class="dropdown-item" href="paleo.html">Paleo</a>
-                  </div>
-                </div><!-- /.dropdown-submenu -->
+        <!-- 3) Vhodné potraviny: 2 sloupce -->
+        <div class="row section-divider">
+          <div class="col-md-6">
+            <h2>Vhodné potraviny</h2>
+            <h3>Maso a ryby</h3>
+            <ul>
+              <li>Libové druhy masa (kuřecí, krůtí, králičí, telecí).</li>
+              <li>Nízkotučné ryby (pstruh, štika, treska, filé).</li>
+              <li>Vysokoprocentní šunky a dietní párky.</li>
+            </ul>
+            <h3>Zelenina a ovoce</h3>
+            <ul>
+              <li>
+                Vařená a dušená zelenina (mrkev, dýně, cuketa, špenát,
+                brambory).
+              </li>
+              <li>Rajčata bez slupky a semínek, rajčatová šťáva.</li>
+              <li>
+                Banány, oloupaná jablka, meruňky a broskve (kompoty, pyré).
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 style="margin-top: 50px">Mléčné výrobky</h3>
+            <ul>
+              <li>
+                Nízkotučné zakysané mléčné výrobky (jogurty, kefíry, podmáslí).
+              </li>
+              <li>
+                Tvrdé sýry a čerstvé sýry (lučina, žervé), nízkolaktózové
+                varianty.
+              </li>
+            </ul>
+            <h3>Pečivo a přílohy</h3>
+            <ul>
+              <li>Bílé pečivo (rohlíky, housky, bagety) bez semínek.</li>
+              <li>Brambory, rýže, (bílé) těstoviny, bramborová kaše.</li>
+              <li>Piškoty, vánočka, mazanec.</li>
+            </ul>
+            <h3>Tuky a nápoje</h3>
+            <ul>
+              <li>
+                Máslo, ghí (přepuštěné máslo), rostlinné oleje (olivový) v malém
+                množství.
+              </li>
+              <li>
+                Neperlivé minerální vody, slabé bylinné čaje, ředěné ovocné
+                šťávy.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <a class="dropdown-item" href="vitaminy-mineraly.html">Vitamíny a Minerály</a>
-                <a class="dropdown-item" href="probiotika.html">Probiotika a Prebiotika</a>
-                <a class="dropdown-item" href="stres.html">Stres</a>
+        <!-- 4) Nevhodné potraviny: 2 sloupce -->
+        <div class="row section-divider">
+          <div class="col-md-6">
+            <h2>Nevhodné potraviny</h2>
+            <h3>Maso a uzeniny</h3>
+            <ul>
+              <li>
+                Tučná masa (vepřové, hovězí) a uzeniny (klobásy, paštiky).
+              </li>
+              <li>Zvěřina a smažené maso.</li>
+            </ul>
+            <h3>Zelenina a ovoce</h3>
+            <ul>
+              <li>
+                Syrová a nadýmavá zelenina (zelí, kapusta, brokolice, cibule,
+                česnek).
+              </li>
+              <li>Kvašená zelenina, luštěniny.</li>
+              <li>
+                Syrové ovoce s tvrdými slupkami, peckami nebo semínky (rybíz,
+                jahody, maliny).
+              </li>
+              <li>Sušené ovoce, hrušky, ananas.</li>
+            </ul>
+          </div>
+          <div class="col-md-6" style="margin-top: 35px">
+            <h3>Mléčné výrobky</h3>
+            <ul>
+              <li>Tučné mléčné výrobky (smetana, šlehačka, tučné sýry).</li>
+              <li>Čisté mléko (u pacientů s intolerancí laktózy).</li>
+            </ul>
+            <h3>Pečivo a obiloviny</h3>
+            <ul>
+              <li>Celozrnné a vícezrnné pečivo, pečivo se semínky.</li>
+              <li>Linecké a listové těsto, kynuté těsto.</li>
+            </ul>
+            <h3>Tuky a nápoje</h3>
+            <ul>
+              <li>Sádlo, margaríny, kokosový a palmový tuk.</li>
+              <li>Alkohol, sycené nápoje, káva, silné čaje.</li>
+            </ul>
+          </div>
+        </div>
 
-                <!-- Lékařská podpora (submenu) -->
-                <div class="dropdown-submenu">
-                  <!-- HLAVNÍ ODKAZ => lekarska-podpora.html -->
-                  <a class="dropdown-item" href="lekarska-podpora.html">
-                    Lékařská podpora
-                  </a>
-                  <!-- submenu s dalšími odkazy -->
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="gastroenterologie.html">Gastroenterologie</a>
-                    <a class="dropdown-item" href="nutricni-poradna.html">Nutriční poradna</a>
-                    <a class="dropdown-item" href="chirurgie-proktologie.html">Chirurgie a Proktologie</a>
-                    <a class="dropdown-item" href="rehabilitace.html">Rehabilitace a Fyzioterapie</a>
-                    <a class="dropdown-item" href="imunologie.html">Imunologie a Alergologie</a>
-                    <a class="dropdown-item" href="oftalmologie.html">Oftalmologie</a>
-                    <a class="dropdown-item" href="dermatologie.html">Dermatologie</a>
-                    <a class="dropdown-item" href="revmatologie.html">Revmatologie</a>
-                  </div>
-                </div><!-- /.dropdown-submenu -->
+        <!-- 5) Výhody a nevýhody: cik-cak (ponechám) -->
+        <div class="row section-divider">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center order-md-1 order-1"
+          >
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek - Výhody a nevýhody</span> -->
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2 order-2">
+            <h2>Výhody a nevýhody bezezbytkové diety</h2>
+            <h3>Výhody</h3>
+            <ul>
+              <li>Snižuje podráždění střevní sliznice a podporuje hojení.</li>
+              <li>Minimalizuje příznaky (průjem, nadýmání, bolest břicha).</li>
+              <li>Snadno stravitelná jídla méně zatěžují trávicí trakt.</li>
+            </ul>
+            <h3>Nevýhody</h3>
+            <ul>
+              <li>
+                Omezený výběr potravin může vést k nedostatku vitamínů (např.
+                C).
+              </li>
+              <li>
+                Vyžaduje pečlivé plánování jídelníčku, dlouhodobě může být
+                psychicky náročná.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <a class="dropdown-item" href="lazne.html">Lázně</a>
-                <a class="dropdown-item" href="invalidni-duchod.html">Invalidní důchod</a>
-                <a class="dropdown-item" href="aplikace-zachod.html">Aplikace na záchod</a>
-                <a class="dropdown-item" href="wc-karta.html">WC karta</a>
-                <a class="dropdown-item" href="euroklic.html">Euroklíč</a>
-              </div>
-            </li>
+        <!-- 6) Příklad jídelníčku: text vlevo, obrázek vpravo -->
+        <div class="row section-divider">
+          <div class="col-md-6 order-md-1 order-1">
+            <h2>Příklad jídelníčku při bezezbytkové dietě</h2>
+            <p>
+              <strong>Snídaně:</strong><br />
+              Bílý rohlík s máslem a plátkem šunky, slabý čaj.
+            </p>
+            <p>
+              <strong>Svačina:</strong><br />
+              Banán nebo ovocné pyré z broskví.
+            </p>
+            <p>
+              <strong>Oběd:</strong><br />
+              Dušené kuřecí maso, bramborová kaše, vařená mrkev.
+            </p>
+            <p>
+              <strong>Svačina:</strong><br />
+              Jogurt bez přidaného cukru.
+            </p>
+            <p>
+              <strong>Večeře:</strong><br />
+              Vařená ryba s brambory a dušenou cuketou.
+            </p>
+          </div>
+          <div
+            class="col-md-6 order-md-2 order-2 d-flex align-items-center justify-content-center"
+          >
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek - Jídelníček</span> -->
+            </div>
+          </div>
+        </div>
 
-            <!-- Kontakt -->
-            <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">Kontakt</a>
-            </li>
-          </ul>
-        </div><!-- /#navbarNav -->
-      </div><!-- /.container -->
-    </nav>
-  </section>
+        <!-- 7) Závěr: text vpravo, obrázek vlevo -->
+        <div class="row section-divider">
+          <div class="col-md-6 order-md-2 order-2">
+            <h2>Závěr</h2>
+            <p>
+              Bezezbytková dieta je účinným nástrojem pro zvládání příznaků
+              Crohnovy choroby a dalších střevních onemocnění. Její přísná
+              pravidla však vyžadují pečlivé plánování a spolupráci s lékařem
+              nebo nutričním terapeutem. Správná příprava pokrmů, výběr potravin
+              a pravidelnost stravy jsou klíčem k úspěchu této diety.
+            </p>
+            <p>
+              I když je dieta omezená, při správném nastavení může výrazně
+              zlepšit kvalitu života pacientů. Pro prevenci nedostatků živin je
+              vhodné zvážit doplňky stravy a pravidelně konzultovat zdravotní
+              stav s odborníky. Dobře nastavená dieta spolu s dalšími opatřeními
+              může výrazně ovlivnit průběh onemocnění.
+            </p>
+          </div>
+          <div
+            class="col-md-6 order-md-1 order-1 d-flex align-items-center justify-content-center"
+          >
+            <div class="img-placeholder">
+              <img
+                src="assets/images/Biological.jpg"
+                alt="Intro Image"
+                class="img-fluid"
+              />
+              <!-- <span>Obrázek - Závěr</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </main>
 
-  <!-- Hero sekce -->
-  <section class="hero-section">
-    <div class="container text-center">
-      <h1>Bezezbytková dieta</h1>
-      <p class="lead">
-        Minimální nestravitelné zbytky, menší zátěž pro střeva a klidnější průběh 
-        Crohnovy choroby.
-      </p>
+    <!-- Spodní proužek -->
+    <div class="bottombar">
+      © 2024 Crohnova choroba. Všechna práva vyhrazena.
     </div>
-  </section>
 
-  <!-- HLAVNÍ OBSAH -->
-  <main>
-    <div class="container">
+    <!-- Skripty (jQuery, bootstrap.bundle) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
 
-      <!-- 1) Úvodní odstavec: plná šířka -->
-      <div class="row">
-        <div class="col-12">
-          <p>
-            Bezezbytková dieta je speciální stravovací režim zaměřený na minimalizaci 
-            nestravitelných zbytků v trávicím traktu. Tento přístup pomáhá snížit 
-            mechanické dráždění střevní sliznice, omezit objem stolice a zmírnit 
-            zánětlivé procesy. Je vhodná nejen pro pacienty s Crohnovou chorobou, 
-            ale i pro pacienty s ulcerózní kolitidou, po operacích střev, při častých 
-            průjmech nebo před kolonoskopickým vyšetřením.
-          </p>
-        </div>
-      </div>
-
-      <!-- 2) Zásady bezezbytkové diety -->
-      <div class="row section-divider">
-        <div class="col-md-6 order-md-1 order-1">
-          <h2>Zásady bezezbytkové diety</h2>
-          <p>
-            Bezezbytková dieta klade důraz na konzumaci snadno stravitelných potravin, 
-            které minimalizují zátěž na trávicí trakt. Klíčovými principy jsou:
-          </p>
-          <ul>
-            <li><strong>Minimalizace vlákniny:</strong> Omezit celozrnné obiloviny, syrovou zeleninu.</li>
-            <li><strong>Šetrná úprava:</strong> Vaření, dušení, pečení bez tuku, pára. Smažení se nedoporučuje.</li>
-            <li><strong>Pravidelnost:</strong> Jíst menší porce 5–6krát denně.</li>
-            <li><strong>Hydratace:</strong> Dostatek vody, bylinkových čajů, vývarů. Vyhnout se alkoholu, syceným nápojům.</li>
-            <li><strong>Minimalizace tuku:</strong> Pouze malé množství másla, ghí či olejů.</li>
-          </ul>
-        </div>
-        <div class="col-md-6 order-md-2 order-2 d-flex align-items-center justify-content-center">
-          <div class="img-placeholder">
-            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
-            <!-- <span>Obrázek - Zásady</span> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- 3) Vhodné potraviny: 2 sloupce -->
-      <div class="row section-divider">
-        <div class="col-md-6">
-          <h2>Vhodné potraviny</h2>
-          <h3>Maso a ryby</h3>
-          <ul>
-            <li>Libové druhy masa (kuřecí, krůtí, králičí, telecí).</li>
-            <li>Nízkotučné ryby (pstruh, štika, treska, filé).</li>
-            <li>Vysokoprocentní šunky a dietní párky.</li>
-          </ul>
-          <h3>Zelenina a ovoce</h3>
-          <ul>
-            <li>Vařená a dušená zelenina (mrkev, dýně, cuketa, špenát, brambory).</li>
-            <li>Rajčata bez slupky a semínek, rajčatová šťáva.</li>
-            <li>Banány, oloupaná jablka, meruňky a broskve (kompoty, pyré).</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3 style="margin-top: 50px;">Mléčné výrobky</h3>
-          <ul>
-            <li>Nízkotučné zakysané mléčné výrobky (jogurty, kefíry, podmáslí).</li>
-            <li>Tvrdé sýry a čerstvé sýry (lučina, žervé), nízkolaktózové varianty.</li>
-          </ul>
-          <h3>Pečivo a přílohy</h3>
-          <ul>
-            <li>Bílé pečivo (rohlíky, housky, bagety) bez semínek.</li>
-            <li>Brambory, rýže, (bílé) těstoviny, bramborová kaše.</li>
-            <li>Piškoty, vánočka, mazanec.</li>
-          </ul>
-          <h3>Tuky a nápoje</h3>
-          <ul>
-            <li>Máslo, ghí (přepuštěné máslo), rostlinné oleje (olivový) v malém množství.</li>
-            <li>Neperlivé minerální vody, slabé bylinné čaje, ředěné ovocné šťávy.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 4) Nevhodné potraviny: 2 sloupce -->
-      <div class="row section-divider">
-        <div class="col-md-6">
-          <h2>Nevhodné potraviny</h2>
-          <h3>Maso a uzeniny</h3>
-          <ul>
-            <li>Tučná masa (vepřové, hovězí) a uzeniny (klobásy, paštiky).</li>
-            <li>Zvěřina a smažené maso.</li>
-          </ul>
-          <h3>Zelenina a ovoce</h3>
-          <ul>
-            <li>Syrová a nadýmavá zelenina (zelí, kapusta, brokolice, cibule, česnek).</li>
-            <li>Kvašená zelenina, luštěniny.</li>
-            <li>Syrové ovoce s tvrdými slupkami, peckami nebo semínky (rybíz, jahody, maliny).</li>
-            <li>Sušené ovoce, hrušky, ananas.</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="margin-top: 35px;">
-          <h3>Mléčné výrobky</h3>
-          <ul>
-            <li>Tučné mléčné výrobky (smetana, šlehačka, tučné sýry).</li>
-            <li>Čisté mléko (u pacientů s intolerancí laktózy).</li>
-          </ul>
-          <h3>Pečivo a obiloviny</h3>
-          <ul>
-            <li>Celozrnné a vícezrnné pečivo, pečivo se semínky.</li>
-            <li>Linecké a listové těsto, kynuté těsto.</li>
-          </ul>
-          <h3>Tuky a nápoje</h3>
-          <ul>
-            <li>Sádlo, margaríny, kokosový a palmový tuk.</li>
-            <li>Alkohol, sycené nápoje, káva, silné čaje.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 5) Výhody a nevýhody: cik-cak (ponechám) -->
-      <div class="row section-divider">
-        <div class="col-md-6 d-flex align-items-center justify-content-center order-md-1 order-1">
-          <div class="img-placeholder">
-            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
-            <!-- <span>Obrázek - Výhody a nevýhody</span> -->
-          </div>
-        </div>
-        <div class="col-md-6 order-md-2 order-2">
-          <h2>Výhody a nevýhody bezezbytkové diety</h2>
-          <h3>Výhody</h3>
-          <ul>
-            <li>Snižuje podráždění střevní sliznice a podporuje hojení.</li>
-            <li>Minimalizuje příznaky (průjem, nadýmání, bolest břicha).</li>
-            <li>Snadno stravitelná jídla méně zatěžují trávicí trakt.</li>
-          </ul>
-          <h3>Nevýhody</h3>
-          <ul>
-            <li>Omezený výběr potravin může vést k nedostatku vitamínů (např. C).</li>
-            <li>Vyžaduje pečlivé plánování jídelníčku, dlouhodobě může být psychicky náročná.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 6) Příklad jídelníčku: text vlevo, obrázek vpravo -->
-      <div class="row section-divider">
-        <div class="col-md-6 order-md-1 order-1">
-          <h2>Příklad jídelníčku při bezezbytkové dietě</h2>
-          <p><strong>Snídaně:</strong><br />
-            Bílý rohlík s máslem a plátkem šunky, slabý čaj.
-          </p>
-          <p><strong>Svačina:</strong><br />
-            Banán nebo ovocné pyré z broskví.
-          </p>
-          <p><strong>Oběd:</strong><br />
-            Dušené kuřecí maso, bramborová kaše, vařená mrkev.
-          </p>
-          <p><strong>Svačina:</strong><br />
-            Jogurt bez přidaného cukru.
-          </p>
-          <p><strong>Večeře:</strong><br />
-            Vařená ryba s brambory a dušenou cuketou.
-          </p>
-        </div>
-        <div class="col-md-6 order-md-2 order-2 d-flex align-items-center justify-content-center">
-          <div class="img-placeholder">
-            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
-            <!-- <span>Obrázek - Jídelníček</span> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- 7) Závěr: text vpravo, obrázek vlevo -->
-      <div class="row section-divider">
-        <div class="col-md-6 order-md-2 order-2">
-          <h2>Závěr</h2>
-          <p>
-            Bezezbytková dieta je účinným nástrojem pro zvládání příznaků 
-            Crohnovy choroby a dalších střevních onemocnění. Její přísná pravidla 
-            však vyžadují pečlivé plánování a spolupráci s lékařem nebo 
-            nutričním terapeutem. Správná příprava pokrmů, výběr potravin a 
-            pravidelnost stravy jsou klíčem k úspěchu této diety. 
-          </p>
-          <p>
-            I když je dieta omezená, při správném nastavení může výrazně zlepšit 
-            kvalitu života pacientů. Pro prevenci nedostatků živin je vhodné zvážit 
-            doplňky stravy a pravidelně konzultovat zdravotní stav s odborníky. 
-            Dobře nastavená dieta spolu s dalšími opatřeními může výrazně ovlivnit 
-            průběh onemocnění.
-          </p>
-        </div>
-        <div class="col-md-6 order-md-1 order-1 d-flex align-items-center justify-content-center">
-          <div class="img-placeholder">
-            <img src="assets/images/Biological.jpg" alt="Intro Image" class="img-fluid">
-            <!-- <span>Obrázek - Závěr</span> -->
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /.container -->
-  </main>
-
-  <!-- Spodní proužek -->
-  <div class="bottombar">
-    © 2024 Crohnova choroba. Všechna práva vyhrazena.
-  </div>
-
-  <!-- Skripty (jQuery, bootstrap.bundle) -->
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"
-  ></script>
-
-  <!-- Submenu skript (mobil -> klik, desktop -> hover) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var submenuToggles = document.querySelectorAll(
-        ".dropdown-submenu > .dropdown-item.dropdown-toggle"
-      );
-
-      function closeAllSubmenus() {
-        var openSubmenus = document.querySelectorAll(
-          ".dropdown-submenu .dropdown-menu.show"
+    <!-- Submenu skript (mobil -> klik, desktop -> hover) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var submenuToggles = document.querySelectorAll(
+          ".dropdown-submenu > .dropdown-item.dropdown-toggle"
         );
-        openSubmenus.forEach(function (menu) {
-          menu.classList.remove("show");
-        });
-      }
 
-      submenuToggles.forEach(function (toggle) {
-        toggle.addEventListener("click", function (e) {
-          if (window.innerWidth < 768) {
-            e.preventDefault();
-            e.stopPropagation();
-            closeAllSubmenus();
-            var submenu = toggle.nextElementSibling;
-            if (submenu && submenu.classList.contains("dropdown-menu")) {
-              submenu.classList.toggle("show");
+        function closeAllSubmenus() {
+          var openSubmenus = document.querySelectorAll(
+            ".dropdown-submenu .dropdown-menu.show"
+          );
+          openSubmenus.forEach(function (menu) {
+            menu.classList.remove("show");
+          });
+        }
+
+        submenuToggles.forEach(function (toggle) {
+          toggle.addEventListener("click", function (e) {
+            if (window.innerWidth < 768) {
+              e.preventDefault();
+              e.stopPropagation();
+              closeAllSubmenus();
+              var submenu = toggle.nextElementSibling;
+              if (submenu && submenu.classList.contains("dropdown-menu")) {
+                submenu.classList.toggle("show");
+              }
+            } else {
+              e.preventDefault();
             }
-          } else {
-            e.preventDefault();
+          });
+        });
+
+        document.addEventListener("click", function () {
+          if (window.innerWidth < 768) {
+            closeAllSubmenus();
           }
         });
       });
-
-      document.addEventListener("click", function () {
-        if (window.innerWidth < 768) {
-          closeAllSubmenus();
-        }
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
